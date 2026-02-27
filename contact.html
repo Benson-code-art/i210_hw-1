@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header> 
+        Beautiful Sights
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <form action="formPost.html" method="get">
+        <fieldset> 
+            <legend>Contact Information</legend>
+            <label for="name"> Full Name</label>
+            <input type="text" name="Full Name" id="name">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email">
+            <br>
+            <label for="phone" >Phone Number</label>
+            <input type="text" name="phone" id="phone"pattern="[0-9]{10}" placeholder="Enter 10
+digit number">
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="student"> Are you a student?</label>
+            <label for="yes">Yes</label>
+            <input type="radio" name="stdent" id="yes" checked>
+            <label for="no">No</label>
+            <input type="radio" name="student" id="no">
+            <br>
+            <label for="year"> Student Year:</label>
+            <select name="Year" id="year">
+                <option value="Fresh">Freshman</option>
+                <option value="Soph">Sophmore</option>
+                <option value="Juni">Junior</option>
+                <option value="Seni">Senior</option>
+            </select>
+            <br>
+            <label for="enjoy">Major Enjoyment: </label>
+            <input type="range" min="1" max="5" name="enjoy" id="enjoy">
+            <br>
+           <textarea name="comment" id="comment"></textarea>
+        </fieldset>
+         <input type="submit" value="Submit Form">
+         </form>
+    </main>
+   <footer> &copy; Chase Benson 2026 All rights reserved</footer> 
+</body>
+</html>
